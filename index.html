@@ -1,13 +1,77 @@
 ---
 layout: default
 title: Home
+description: Compassionate, traditional Jewish burial care for the Greater Cleveland community, regardless of denomination or observance.
 ---
+
 <section class="hero">
   <p class="eyebrow">Kavod Hames &middot; Honoring the deceased with dignity</p>
-  <h1>Welcome</h1>
-  <p>Our new website is coming together. This page confirms the layout, navigation, and styling are working.</p>
+  <h1>Compassionate care for the Jewish community at the time of a death</h1>
+  <p>A volunteer organization providing traditional burial preparation to any Jewish person, regardless of denomination or observance.</p>
   <div class="hero-actions">
     <a class="btn btn-gold" href="tel:{{ site.phone_link }}">Call {{ site.phone }}</a>
     <a class="btn btn-outline-light" href="{{ '/contact/' | relative_url }}">Contact us</a>
+  </div>
+</section>
+
+<div class="help-strip">
+  <div class="container">
+    We are available to assist families <strong>with sensitivity and expertise</strong> regarding an imminent or recent death.
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">How we can help</h2>
+    <div class="cards">
+
+      <a class="card" href="{{ '/education/what-is-jewish-burial/' | relative_url }}">
+        <div class="card-icon" aria-hidden="true">&#10017;</div>
+        <h3>What is Jewish Burial</h3>
+        <p>The traditional burial process, explained step by step.</p>
+      </a>
+
+      <a class="card" href="{{ '/education/cremation/' | relative_url }}">
+        <div class="card-icon" aria-hidden="true">&#9878;</div>
+        <h3>Burial vs Cremation</h3>
+        <p>Understand Jewish law and make an informed decision.</p>
+      </a>
+
+      <a class="card" href="{{ '/resources/shiva-downloads/' | relative_url }}">
+        <div class="card-icon" aria-hidden="true">&#8595;</div>
+        <h3>Shiva Downloads</h3>
+        <p>Materials and resources for the mourning period.</p>
+      </a>
+
+      <a class="card" href="{{ '/contact/' | relative_url }}">
+        <div class="card-icon" aria-hidden="true">&#9742;</div>
+        <h3>Contact Us</h3>
+        <p>Need to speak with someone directly? Reach us any time.</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#ffffff;border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container" style="max-width:760px;text-align:center;">
+    <h2 class="section-title">Who we are</h2>
+    <p>The Chevra Kadisha of Greater Cleveland maintains the highest level of respect and dignity caring for all Jewish people at the time of a death. We assist families with any questions regarding an imminent or recent death, and we offer burial preparation to any Jewish person, regardless of their denomination or observance.</p>
+    <p style="margin-top:24px;">
+      <a class="btn btn-outline" href="{{ '/about/' | relative_url }}">About our work</a>
+    </p>
+  </div>
+</section>
+
+<section class="section" style="background:var(--navy-dark);color:#fff;text-align:center;">
+  <div class="container" style="max-width:680px;">
+    <h2 class="section-title" style="color:#fff;">Reach the Chevra Kadisha</h2>
+    <p style="color:#c7d2dc;">{{ site.address_line1 }}, {{ site.address_line2 }}</p>
+    <p style="color:#c7d2dc;margin-bottom:28px;">
+      <a href="tel:{{ site.phone_link }}" style="color:#fff;">{{ site.phone }}</a>
+      &nbsp;&middot;&nbsp;
+      <a href="mailto:{{ site.email }}" style="color:#fff;">{{ site.email }}</a>
+    </p>
+    <a class="btn btn-gold" href="tel:{{ site.phone_link }}">Call now</a>
   </div>
 </section>
