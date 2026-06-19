@@ -25,3 +25,4 @@ nav:
     url: /contact/
 
 markdown: kramdown
+permalink: pretty
