@@ -1,0 +1,27 @@
+title: Chevra Kadisha of Greater Cleveland
+description: Compassionate, traditional Jewish burial care for the Greater Cleveland community.
+
+url: "https://origin-story613.github.io"
+baseurl: "/jsscleveland"
+
+phone: "(216) 371-5717"
+phone_link: "+12163715717"
+email: "estherr@jsscleveland.com"
+address_line1: "2566 Larchmont Rd"
+address_line2: "Beachwood, Ohio 44122"
+
+nav:
+  - title: Home
+    url: /
+  - title: Education
+    url: /education/
+  - title: Resources
+    url: /resources/
+  - title: Burial Arrangements
+    url: /burial/
+  - title: About
+    url: /about/
+  - title: Contact
+    url: /contact/
+
+markdown: kramdown
