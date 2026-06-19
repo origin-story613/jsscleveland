@@ -1,0 +1,36 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-title">Chevra Kadisha</div>
+        <p class="footer-text">
+          {{ site.address_line1 }}<br>
+          {{ site.address_line2 }}
+        </p>
+        <p class="footer-text">
+          <a href="tel:{{ site.phone_link }}">{{ site.phone }}</a><br>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </p>
+      </div>
+      <div>
+        <div class="footer-title">Site</div>
+        <ul class="footer-links">
+          {% for item in site.nav %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endfor %}
+          <li><a href="{{ '/donate/' | relative_url }}">Donate</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-title">We are here to help</div>
+        <p class="footer-text">Available to assist families with sensitivity and expertise regarding an imminent or recent death.</p>
+        <a class="btn btn-outline-light" href="{{ '/contact/' | relative_url }}">Contact us</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      &copy; {{ site.time | date: '%Y' }} Chevra Kadisha of Greater Cleveland &middot; A volunteer organization
+    </div>
+  </div>
+</footer>
