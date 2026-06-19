@@ -1,0 +1,23 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-mark" aria-hidden="true">&#10017;</span>
+      <span class="brand-text">
+        <span class="brand-name">Chevra Kadisha</span>
+        <span class="brand-sub">of Greater Cleveland</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        {% for item in site.nav %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+      <a class="btn btn-gold nav-cta" href="{{ '/donate/' | relative_url }}">Donate</a>
+      <a class="phone-pill" href="tel:{{ site.phone_link }}">&#9742; {{ site.phone }}</a>
+    </nav>
+  </div>
+</header>
