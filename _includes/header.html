@@ -1,11 +1,15 @@
+<div class="bh" lang="he">ב״ה</div>
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="{{ '/' | relative_url }}">
-      <span class="brand-mark" aria-hidden="true">&#10017;</span>
+      {% if site.logo %}
+      <img class="brand-logo" src="{{ site.logo | relative_url }}" alt="{{ site.title }}">
+      {% else %}
       <span class="brand-text">
         <span class="brand-name">Chevra Kadisha</span>
         <span class="brand-sub">of Greater Cleveland</span>
       </span>
+      {% endif %}
     </a>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
       <span></span><span></span><span></span>

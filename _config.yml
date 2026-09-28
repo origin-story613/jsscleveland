@@ -4,6 +4,9 @@ description: Compassionate, traditional Jewish burial care for the Greater Cleve
 url: "https://origin-story613.github.io"
 baseurl: "/jsscleveland"
 
+# Upload the Chevra Kadisha logo to this path; the header falls back to text if unset.
+# logo: /assets/images/logo.png
+
 phone: "(216) 371-5717"
 phone_link: "+12163715717"
 email: "estherr@jsscleveland.com"
