@@ -15,9 +15,10 @@
       <div>
         <div class="footer-title">Site</div>
         <ul class="footer-links">
-          {% for item in site.nav %}
+          {% for item in site.data.navigation %}
           <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
           {% endfor %}
+          <li><a href="{{ '/resources/' | relative_url }}">Downloads</a></li>
           <li><a href="{{ '/donate/' | relative_url }}">Donate</a></li>
         </ul>
       </div>

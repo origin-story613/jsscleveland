@@ -1,5 +1,6 @@
 ---
 layout: page
+section: about
 title: Donate
 subtitle: Support the sacred work of the Chevra Kadisha.
 ---

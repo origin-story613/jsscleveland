@@ -14,19 +14,12 @@ email: "estherr@jsscleveland.com"
 address_line1: "2566 Larchmont Rd"
 address_line2: "Beachwood, Ohio 44122"
 
-nav:
-  - title: Home
-    url: /
-  - title: Education
-    url: /education/
-  - title: Resources
-    url: /resources/
-  - title: Burial Arrangements
-    url: /burial/
-  - title: About
-    url: /about/
-  - title: Contact
-    url: /contact/
 
 markdown: kramdown
 permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - README.md

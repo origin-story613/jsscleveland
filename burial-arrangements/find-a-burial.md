@@ -1,5 +1,6 @@
 ---
 layout: page
+section: mourning
 title: Find a Burial
 subtitle: Search local cemetery and ancestry records.
 ---

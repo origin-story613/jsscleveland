@@ -1,5 +1,6 @@
 ---
 layout: page
+section: mourning
 title: Yahrtzeit
 subtitle: Determine and observe the anniversary of a loved one's passing.
 ---

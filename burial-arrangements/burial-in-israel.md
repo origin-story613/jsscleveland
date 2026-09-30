@@ -1,5 +1,6 @@
 ---
 layout: page
+section: planning
 title: How to Arrange for Burial in Israel
 subtitle: A guide to the customs, requirements, and options for burial in the Land of Israel.
 ---

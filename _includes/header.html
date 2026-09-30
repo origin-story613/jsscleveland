@@ -11,17 +11,25 @@
       </span>
       {% endif %}
     </a>
+    <a class="phone-link phone-mobile" href="tel:{{ site.phone_link }}">{{ site.phone }}</a>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
       <span></span><span></span><span></span>
     </button>
     <nav class="site-nav" id="site-nav" aria-label="Main">
       <ul>
-        {% for item in site.nav %}
-        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% for item in site.data.navigation %}
+        <li class="has-sub{% if page.section == item.id %} active{% endif %}">
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          <ul class="sub">
+            {% for child in item.children %}
+            <li><a href="{{ child.url | relative_url }}">{{ child.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
         {% endfor %}
       </ul>
       <a class="btn btn-primary nav-cta" href="{{ '/donate/' | relative_url }}">Donate</a>
-      <a class="phone-link" href="tel:{{ site.phone_link }}">{{ site.phone }}</a>
+      <a class="phone-link phone-desktop" href="tel:{{ site.phone_link }}">{{ site.phone }}</a>
     </nav>
   </div>
 </header>

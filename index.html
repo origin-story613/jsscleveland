@@ -8,6 +8,10 @@ description: Compassionate, traditional Jewish burial care for the Greater Cleve
   <h1><a href="tel:{{ site.phone_link }}"><img class="hero-logo" src="{{ site.hero_logo | relative_url }}" alt="Chevra Kadisha, Jewish Sacred Society of Cleveland. Respecting the deceased, elevating the soul. {{ site.phone }}"></a></h1>
 </section>
 
+<div class="urgent">
+  Has a death just occurred? <a href="tel:{{ site.phone_link }}">Call {{ site.phone }}</a><span class="sep">&middot;</span><a href="{{ '/when-a-death-occurs/' | relative_url }}">What to do first &rarr;</a>
+</div>
+
 <div class="container">
   <div class="intro">
     <p>The Chevra Kadisha of Greater Cleveland maintains the highest level of respect and dignity (kavod hames) caring for all Jewish people at the time of a death. We are available to assist families with sensitivity and expertise with any questions regarding an imminent or recent death. Before making funeral arrangements, it is helpful to understand the basic principles and practices concerning death and mourning to which Judaism subscribes. The Chevra Kadisha of Cleveland is a volunteer organization offering services of burial preparation to any Jewish person, regardless of their denomination or observance.</p>
@@ -21,31 +25,13 @@ description: Compassionate, traditional Jewish burial care for the Greater Cleve
 <section class="section">
   <div class="container">
     <div class="cards">
-
-      <a class="card" href="{{ '/education/what-is-jewish-burial/' | relative_url }}">
-        <h3>What is a Jewish Burial</h3>
-        <p>What happens to the soul after death should make all the difference in your burial decisions.</p>
+{% for item in site.data.navigation %}{% unless item.id == "about" %}
+      <a class="card" href="{{ item.url | relative_url }}">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.children[0].desc }}</p>
         <span class="btn btn-primary">Learn more</span>
       </a>
-
-      <a class="card" href="{{ '/education/cremation/' | relative_url }}">
-        <h3>Burial vs Cremation</h3>
-        <p>Why does Jewish law prohibit cremation? Learn more and make an informed decision.</p>
-        <span class="btn btn-primary">Learn more</span>
-      </a>
-
-      <a class="card" href="{{ '/resources/shiva-downloads/' | relative_url }}">
-        <h3>Shiva Downloads</h3>
-        <p>Find all of the download items you may need for the shiva.</p>
-        <span class="btn btn-primary">Shiva downloads</span>
-      </a>
-
-      <a class="card" href="{{ '/contact/' | relative_url }}">
-        <h3>Contact Us</h3>
-        <p>Need to speak with someone directly? Contact the Chevra Kadisha directly.</p>
-        <span class="btn btn-primary">Learn more</span>
-      </a>
-
+{% endunless %}{% endfor %}
     </div>
   </div>
 </section>

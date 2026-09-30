@@ -1,5 +1,6 @@
 ---
 layout: page
+section: about
 title: Contact Us
 subtitle: We are available to assist families at any hour.
 ---

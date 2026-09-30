@@ -1,0 +1,97 @@
+# Main menu. Drives the header dropdowns, the footer, section landing-page
+# cards and breadcrumbs. To add a page: create it, then add it here.
+# "id" matches the "section:" front matter of the pages in that section.
+
+- title: When a Death Occurs
+  id: death
+  url: /when-a-death-occurs/
+  children:
+    - title: First Steps
+      url: /when-a-death-occurs/
+      desc: What to do in the first hours after a death.
+    - title: Working with Funeral Homes
+      url: /when-a-death-occurs/funeral-homes/
+      desc: What to ask for when arranging a traditional Jewish funeral.
+    - title: Contact the Chevra Kadisha
+      url: /contact/
+      desc: Reach us at any hour.
+
+- title: Planning Ahead
+  id: planning
+  url: /planning-ahead/
+  children:
+    - title: Pre-Planning Checklist
+      url: /planning-ahead/
+      desc: Steps to take now so your wishes are known and honored.
+    - title: Halachic Living Will
+      url: /resources/halachic-living-wills/
+      desc: A medical directive in accordance with Jewish law.
+    - title: EMES Card
+      url: /resources/emes-card/
+      desc: Carry your Jewish burial wishes with you.
+    - title: Area Cemeteries
+      url: /burial-arrangements/area-cemeteries/
+      desc: Jewish cemeteries serving Greater Cleveland.
+    - title: Burial in Israel
+      url: /burial-arrangements/burial-in-israel/
+      desc: Arranging burial in the Land of Israel.
+
+- title: Mourning & Remembrance
+  id: mourning
+  url: /mourning/
+  children:
+    - title: The Mourning Period
+      url: /mourning/
+      desc: From the funeral through shiva, shloshim and the first year.
+    - title: Shiva Guide & Downloads
+      url: /resources/shiva-downloads/
+      desc: Materials for the week of mourning.
+    - title: Yahrtzeit & Kaddish
+      url: /resources/yahrtzeit/
+      desc: Observe the anniversary and arrange for Kaddish.
+    - title: Grief Support
+      url: /mourning/grief-support/
+      desc: Support in the weeks and months after a loss.
+    - title: Find a Burial
+      url: /burial-arrangements/find-a-burial/
+      desc: Search local cemetery and ancestry records.
+
+- title: Learn
+  id: learn
+  url: /education/
+  children:
+    - title: What is a Jewish Burial
+      url: /education/what-is-jewish-burial/
+      desc: Tahara, shmira, tachrichim, the aron and burial, step by step.
+    - title: Holiness of the Body
+      url: /education/holiness-of-body/
+      desc: Why Judaism treats the body with such reverence.
+    - title: Death & the Afterlife
+      url: /education/death-and-afterlife/
+      desc: The journey of the soul beyond this world.
+    - title: Burial vs Cremation
+      url: /education/cremation/
+      desc: Why Jewish law prohibits cremation.
+    - title: Ask the Rabbi
+      url: /resources/ask-the-rabbi/
+      desc: Questions about Jewish burial, mourning and halacha.
+    - title: Glossary
+      url: /education/glossary/
+      desc: Plain-language definitions of the terms used on this site.
+
+- title: About
+  id: about
+  url: /about/
+  children:
+    - title: About Us
+      url: /about/
+      desc: Our mission, history and leadership.
+    - title: Contact
+      url: /contact/
+      desc: Phone numbers, email and mailing address.
+    - title: Downloads
+      url: /resources/
+      desc: Every form and document in one place.
+    - title: Donate
+      url: /donate/
+      desc: Support the work of the Chevra Kadisha.

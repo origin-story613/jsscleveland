@@ -1,10 +1,14 @@
 ---
 layout: default
 ---
+{%- assign sec = site.data.navigation | where: "id", page.section | first -%}
 <div class="page">
   <div class="container">
+    {% if sec and sec.url != page.url %}<p class="breadcrumb"><a href="{{ sec.url | relative_url }}">{{ sec.title }}</a></p>{% endif %}
+    {% if page.review %}<div class="review-note"><strong>Draft for review.</strong> This page has not yet been reviewed by the Chevra Kadisha. Please contact us with any questions.</div>{% endif %}
     {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
-    {% if page.subtitle %}<p style="font-size:1.15rem;color:var(--muted);margin-top:-.3em;">{{ page.subtitle }}</p>{% endif %}
+    {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
     {{ content }}
+    {% if page.section_cards %}{% include section-cards.html %}{% endif %}
   </div>
 </div>

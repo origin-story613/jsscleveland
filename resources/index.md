@@ -1,32 +1,18 @@
 ---
 layout: page
-title: Resources
-subtitle: Forms, downloads, and guidance for families and the community.
+section: about
+title: Downloads
+subtitle: Every form and document from the Chevra Kadisha in one place.
+description: Forms and documents from the Chevra Kadisha of Greater Cleveland, including the Ohio Halachic Medical Directive.
 ---
 
-<div class="cards" style="margin-top:32px;">
-  <a class="card" href="{{ '/resources/shiva-downloads/' | relative_url }}">
-    <h3>Shiva Downloads</h3>
-    <p>Materials and resources for the mourning period.</p>
-  </a>
-  <a class="card" href="{{ '/resources/yahrtzeit/' | relative_url }}">
-    <h3>Yahrtzeit</h3>
-    <p>Determine and remember the date of a loved one's passing.</p>
-  </a>
-  <a class="card" href="{{ '/resources/emes-card/' | relative_url }}">
-    <h3>EMES Card</h3>
-    <p>Carry your Jewish burial wishes with you.</p>
-  </a>
-  <a class="card" href="{{ '/resources/halachic-living-wills/' | relative_url }}">
-    <h3>Halachic / Living Wills</h3>
-    <p>Express your wishes in accordance with Jewish law.</p>
-  </a>
-  <a class="card" href="{{ '/resources/ask-the-rabbi/' | relative_url }}">
-    <h3>Ask the Rabbi</h3>
-    <p>Submit a question about Jewish burial and mourning.</p>
-  </a>
-  <a class="card" href="{{ '/burial/find-a-burial/' | relative_url }}">
-    <h3>Find a Burial</h3>
-    <p>Search local cemetery and ancestry records.</p>
-  </a>
-</div>
+## Planning ahead
+
+- **Ohio Halachic Medical Directive (Halachic Living Will)** · [Download PDF](https://www.jsscleveland.com/wp-content/uploads/2020/03/Ohio-Halachic-Medical-Directive-booklet-to-print.pdf){:target="_blank" rel="noopener"} · [About the directive]({{ '/resources/halachic-living-wills/' | relative_url }})
+- **Burial wishes form** · Available on request. [Contact us]({{ '/contact/' | relative_url }})
+
+## Shiva and mourning
+
+- **Shiva materials** · Coming soon. [Shiva guide]({{ '/resources/shiva-downloads/' | relative_url }})
+
+<!-- To add a document: upload the file to assets/docs/ and add a line above. -->

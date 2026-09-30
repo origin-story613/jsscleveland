@@ -1,5 +1,6 @@
 ---
 layout: page
+section: learn
 title: The Jewish Approach to Death & the Afterlife
 subtitle: Understanding the neshamah, the afterlife, reward and punishment, and resurrection.
 ---

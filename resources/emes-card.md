@@ -1,5 +1,6 @@
 ---
 layout: page
+section: planning
 title: The EMES Card
 subtitle: Ensuring your end-of-life and burial wishes are known and honored.
 ---

@@ -1,5 +1,6 @@
 ---
 layout: page
+section: learn
 title: Ask the Rabbi
 subtitle: Submit a question about Jewish burial, mourning, or tradition.
 ---

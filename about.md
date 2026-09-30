@@ -1,5 +1,7 @@
 ---
 layout: page
+section: about
+section_cards: true
 title: About
 subtitle: The Chevra Kadisha of Greater Cleveland, a service of the Jewish Sacred Society of Cleveland.
 ---

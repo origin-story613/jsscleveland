@@ -1,0 +1,15 @@
+{%- comment -%} Cards for every page in this page's section (from _data/navigation.yml), except this page. {%- endcomment -%}
+{%- assign sec = site.data.navigation | where: "id", page.section | first -%}
+{%- if sec -%}
+<h2>{{ include.heading | default: "In this section" }}</h2>
+<div class="cards">
+  {%- for child in sec.children -%}
+  {%- unless child.url == page.url %}
+  <a class="card" href="{{ child.url | relative_url }}">
+    <h3>{{ child.title }}</h3>
+    <p>{{ child.desc }}</p>
+  </a>
+  {%- endunless -%}
+  {%- endfor %}
+</div>
+{%- endif -%}

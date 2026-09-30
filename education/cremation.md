@@ -1,5 +1,6 @@
 ---
 layout: page
+section: learn
 title: Cremation
 subtitle: Jewish law requires burial and prohibits cremation.
 ---

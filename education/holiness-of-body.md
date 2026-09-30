@@ -1,5 +1,6 @@
 ---
 layout: page
+section: learn
 title: The Holiness of the Body
 subtitle: Why must we treat a body with respect, even after death?
 ---

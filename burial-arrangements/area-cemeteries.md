@@ -1,5 +1,6 @@
 ---
 layout: page
+section: planning
 title: Area Cemeteries
 subtitle: Jewish cemeteries serving the Greater Cleveland community.
 ---

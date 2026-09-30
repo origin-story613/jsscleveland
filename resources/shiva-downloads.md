@@ -1,5 +1,6 @@
 ---
 layout: page
+section: mourning
 title: Shiva Downloads
 subtitle: Materials and resources for the period of mourning.
 ---

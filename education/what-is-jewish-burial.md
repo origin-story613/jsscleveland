@@ -1,5 +1,6 @@
 ---
 layout: page
+section: learn
 title: What is a Jewish Burial?
 subtitle: What happens to the soul after death should make all the difference in your burial decisions.
 ---

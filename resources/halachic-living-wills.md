@@ -1,5 +1,6 @@
 ---
 layout: page
+section: planning
 title: Halachic / Living Wills
 subtitle: Designate a proxy and ensure your medical decisions follow halacha.
 ---
