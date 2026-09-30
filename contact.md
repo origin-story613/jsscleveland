@@ -7,7 +7,7 @@ subtitle: We are available to assist families at any hour.
 If you are dealing with an imminent or recent death and need to reach the Chevra Kadisha right away, please call.
 
 <p>
-  <a class="btn btn-gold" href="tel:{{ site.phone_link }}">Call {{ site.phone }}</a>
+  <a class="btn btn-primary" href="tel:{{ site.phone_link }}">Call {{ site.phone }}</a>
 </p>
 
 ## In case of emergency

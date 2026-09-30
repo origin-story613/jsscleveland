@@ -10,7 +10,7 @@ A yahrtzeit is the anniversary, by the Hebrew calendar, of a loved one's passing
 
 To find the Hebrew date and upcoming yahrtzeit anniversaries for a given passing, use the free Hebcal yahrzeit calculator:
 
-<p><a class="btn btn-navy" href="https://www.hebcal.com/yahrzeit" target="_blank" rel="noopener">Open the Yahrzeit Calculator</a></p>
+<p><a class="btn btn-primary" href="https://www.hebcal.com/yahrzeit" target="_blank" rel="noopener">Open the Yahrzeit Calculator</a></p>
 
 ## Kaddish & remembrance services
 

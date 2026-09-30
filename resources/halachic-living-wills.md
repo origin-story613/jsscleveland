@@ -14,7 +14,7 @@ Setting up your Halachic Living Will is as easy as 1‑2‑3:
 
 Please download the Halachic Living Will, fill it out and sign it, then return it to Rabbi Nissim Abrin at [Rabbi.nabrin@jsscleveland.com](mailto:Rabbi.nabrin@jsscleveland.com).
 
-<p><a class="btn btn-gold" href="https://www.jsscleveland.com/wp-content/uploads/2020/03/Ohio-Halachic-Medical-Directive-booklet-to-print.pdf" target="_blank" rel="noopener">Download your Living Will</a></p>
+<p><a class="btn btn-primary" href="https://www.jsscleveland.com/wp-content/uploads/2020/03/Ohio-Halachic-Medical-Directive-booklet-to-print.pdf" target="_blank" rel="noopener">Download your Living Will</a></p>
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:28px 0;border-radius:8px;">
   <iframe src="https://www.youtube.com/embed/Swyq-j2Ttyk" title="The Halachic Living Will" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen></iframe>
