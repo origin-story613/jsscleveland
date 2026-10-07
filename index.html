@@ -5,46 +5,70 @@ description: Compassionate, traditional Jewish burial care for the Greater Cleve
 ---
 
 <section class="hero">
-  <h1><a href="tel:{{ site.phone_link }}"><img class="hero-logo" src="{{ site.hero_logo | relative_url }}" alt="Chevra Kadisha, Jewish Sacred Society of Cleveland. Respecting the deceased, elevating the soul. {{ site.phone }}"></a></h1>
-</section>
-
-<div class="urgent">
-  Has a death just occurred? <a href="tel:{{ site.phone_link }}">Call {{ site.phone }}</a><span class="sep">&middot;</span><a href="{{ '/when-a-death-occurs/' | relative_url }}">What to do first &rarr;</a>
-</div>
-
-<div class="container">
-  <div class="intro">
-    <p>The Chevra Kadisha of Greater Cleveland maintains the highest level of respect and dignity (kavod hames) caring for all Jewish people at the time of a death. We are available to assist families with sensitivity and expertise with any questions regarding an imminent or recent death. Before making funeral arrangements, it is helpful to understand the basic principles and practices concerning death and mourning to which Judaism subscribes. The Chevra Kadisha of Cleveland is a volunteer organization offering services of burial preparation to any Jewish person, regardless of their denomination or observance.</p>
-    <p style="margin:24px 0 0;">
-      <a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Contact Chevra Kadisha</a>
-      <a class="intro-phone" href="tel:{{ site.phone_link }}">{{ site.phone }}</a>
-    </p>
+  <h1><img class="hero-logo" src="{{ site.hero_logo | relative_url }}" alt="Chevra Kadisha, Jewish Sacred Society of Cleveland. Respecting the deceased, elevating the soul."></h1>
+  <p class="hero-lead">Has a death just occurred? We are here to help, at any hour.</p>
+  <div class="hero-actions">
+    <a class="btn btn-accent btn-lg" href="tel:{{ site.phone_link }}">Call {{ site.phone }}</a>
+    <a class="btn btn-outline-light btn-lg" href="{{ '/when-a-death-occurs/' | relative_url }}">What to do first</a>
   </div>
-</div>
+</section>
 
 <section class="section">
   <div class="container">
-    <div class="cards">
-{% for item in site.data.navigation %}{% unless item.id == "about" %}
-      <a class="card" href="{{ item.url | relative_url }}">
-        <h3>{{ item.title }}</h3>
+    <h2 class="section-title">How can we help you?</h2>
+    <div class="paths">
+      {%- for item in site.data.navigation %}{% unless item.id == "about" %}
+      <div class="path{% if forloop.first %} path-urgent{% endif %}">
+        <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
         <p>{{ item.children[0].desc }}</p>
-        <span class="btn btn-primary">Learn more</span>
-      </a>
-{% endunless %}{% endfor %}
+        <ul>
+          {%- for child in item.children limit:4 %}
+          <li><a href="{{ child.url | relative_url }}">{{ child.title }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+      {%- endunless %}{% endfor %}
     </div>
   </div>
 </section>
 
-<section class="section" style="background:var(--white);border-top:1px solid var(--border);">
-  <div class="container" style="max-width:680px;text-align:center;">
+<section class="section chesed">
+  <div class="container">
+    <p class="chesed-he" lang="he">חסד של אמת</p>
+    <h2 class="section-title">A kindness of truth</h2>
+    <p>Caring for the deceased is called <em>chesed shel emes</em>, a kindness of truth, because it is given to one who can never repay it. The volunteers of the Chevra Kadisha perform this mitzvah with the utmost respect and dignity (kavod hames), as Jewish communities have for generations.</p>
+    <p>We offer burial preparation to any Jewish person in Greater Cleveland, regardless of denomination or observance, and we are available to guide families with sensitivity through any question about an imminent or recent death.</p>
+    <p><a class="btn btn-outline" href="{{ '/about/' | relative_url }}">About the Chevra Kadisha</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Frequently used</h2>
+    <div class="quick-links">
+      <a href="{{ '/resources/halachic-living-wills/' | relative_url }}">Halachic Living Will</a>
+      <a href="{{ '/resources/yahrtzeit/' | relative_url }}">Yahrtzeit Calculator</a>
+      <a href="{{ '/resources/shiva-downloads/' | relative_url }}">Shiva Downloads</a>
+      <a href="{{ '/resources/ask-the-rabbi/' | relative_url }}">Ask the Rabbi</a>
+      <a href="{{ '/burial-arrangements/area-cemeteries/' | relative_url }}">Area Cemeteries</a>
+      <a href="{{ '/resources/' | relative_url }}">All Downloads</a>
+    </div>
+  </div>
+</section>
+
+<section class="section reach">
+  <div class="container">
     <h2 class="section-title">Reach the Chevra Kadisha</h2>
     <p>{{ site.address_line1 }}, {{ site.address_line2 }}</p>
-    <p style="margin-bottom:28px;">
+    <p>
       <a href="tel:{{ site.phone_link }}">{{ site.phone }}</a>
       &nbsp;&middot;&nbsp;
       <a href="mailto:{{ site.email }}">{{ site.email }}</a>
     </p>
-    <a class="btn btn-accent" href="tel:{{ site.phone_link }}">Call now</a>
+    <p class="reach-actions">
+      <a class="btn btn-accent" href="tel:{{ site.phone_link }}">Call now</a>
+      <a class="btn btn-outline" href="{{ '/contact/' | relative_url }}">All contacts</a>
+    </p>
+    <p class="donate-line">We are a volunteer organization. <a href="{{ '/donate/' | relative_url }}">Your support</a> makes this sacred work possible.</p>
   </div>
 </section>
